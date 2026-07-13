@@ -1,4 +1,4 @@
-export const API_URL = "/api";
+export const API_URL = "https://api.sporthubrs.top";
 
 export async function apiResponse(path, options = {}) {
   const token = localStorage.getItem("sporthub_token");
