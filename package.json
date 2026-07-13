@@ -1,0 +1,15 @@
+{
+  "name": "sporthubrs-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Moderni frontend za SportHub RS platformu.",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "node --watch dev-server.js",
+    "check": "node --check src/main.js && node --check src/api.js && node --check src/icons.js && node --check dev-server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
