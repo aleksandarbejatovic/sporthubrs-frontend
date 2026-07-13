@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import https from "node:https";
 import http from "node:http";
 
-const BACKEND_URL = "https://api.sporthub-rs.167-233-227-61.sslip.io";
+const BACKEND_URL = "https://api.sporthubrs.top";
 
 const root = fileURLToPath(new URL(".", import.meta.url));
 const port = Number(process.env.FRONTEND_PORT || 5173);
