@@ -109,16 +109,13 @@ function header() {
           ${navItems.map(([href, label]) => `<a href="${href}" data-link class="nav-link ${isActive(href) ? "active" : ""}">${label}</a>`).join("")}
         </nav>
         <div class="nav-actions">
-          <span class="connection"><i class="connection-dot"></i> API live</span>
           <button class="icon-btn" data-search-open aria-label="Otvori pretragu">${icon("search", 19)}</button>
-          <a class="icon-btn" href="/admin" data-link aria-label="Administracija">${icon("user", 19)}</a>
           <button class="icon-btn menu-btn" data-menu aria-label="Otvori meni">${icon(state.mobileOpen ? "close" : "menu", 21)}</button>
         </div>
       </div>
       <nav class="mobile-panel ${state.mobileOpen ? "open" : ""}" aria-label="Mobilna navigacija">
         ${navItems.map(([href, label]) => `<a href="${href}" data-link class="nav-link ${isActive(href) ? "active" : ""}">${label}</a>`).join("")}
         <a href="/kontakt" data-link class="nav-link ${isActive("/kontakt") ? "active" : ""}">Kontakt</a>
-        <a href="/admin" data-link class="nav-link ${isActive("/admin") ? "active" : ""}">Administracija</a>
       </nav>
     </header>`;
 }
