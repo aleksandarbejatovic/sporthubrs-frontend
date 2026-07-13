@@ -28,7 +28,7 @@ createServer(async (req, res) => {
 
     // Proxy /api/* requests to backend
     if (pathname.startsWith("/api/")) {
-      const targetPath = pathname.slice(4) + (new URL(req.url, `http://${req.headers.host}`).search || "");
+      const targetPath = pathname + (new URL(req.url, `http://${req.headers.host}`).search || "");
       const backendUrl = new URL(targetPath, BACKEND_URL);
       const lib = backendUrl.protocol === "https:" ? https : http;
 
