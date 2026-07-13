@@ -1,4 +1,4 @@
-export const API_URL = "http://127.0.0.1:4000";
+export const API_URL = "https://api.sporthub-rs.167-233-227-61.sslip.io";
 
 export async function apiResponse(path, options = {}) {
   const token = localStorage.getItem("sporthub_token");
